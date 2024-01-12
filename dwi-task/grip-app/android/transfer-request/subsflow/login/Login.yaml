@@ -1,0 +1,25 @@
+appId: id.co.grip_force
+---
+- launchApp
+
+- runScript : "screens/loginscreen.js"
+- runScript : "credentials/input.js"
+
+#- assertVisible: "Forgot password ?"
+#- tapOn: ${output.ForgotField}
+#- tapOn: "Ok"
+- tapOn: ${output.emailField}
+- inputText: ${output.emailInputField}
+- tapOn: ${output.passwordField}
+- inputText: ${output.passwordInputField}
+- tapOn: ${output.loginbtn}
+- assertVisible: ${output.TransferField}
+- tapOn: ${output.TransferField}
+- assertVisible:
+    text: ${output.viewField}
+    index: 0
+#- runFlow:
+    #when:
+     # notVisible:
+      #  text: ${output.TransferField}
+#    file: "logout.yaml"

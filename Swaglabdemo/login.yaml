@@ -1,0 +1,26 @@
+appId: com.swaglabsmobileapp
+---
+- launchApp
+- tapOn: "Username"
+- inputText: "standard_user"
+- tapOn: "Password"
+- inputText: "secret_sauce"
+- tapOn: "LOGIN"
+- tapOn: "Sauce Labs Backpack"
+- "scroll"
+- tapOn: "ADD TO CART"
+- tapOn:
+    point: "92%,7%"
+- tapOn: "CHECKOUT"
+- tapOn: "First Name"
+- inputText: "Budi"
+- tapOn: "Last Name"
+- inputText: "Anduk"
+- tapOn: "Zip/Postal Code"
+- inputText: 15413
+- "hideKeyboard"
+- tapOn: "CONTINUE"
+- "scroll"
+- tapOn: "FINISH"
+- tapOn: "BACK HOME"
+

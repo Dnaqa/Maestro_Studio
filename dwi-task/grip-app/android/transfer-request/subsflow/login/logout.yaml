@@ -1,0 +1,15 @@
+appId: id.co.grip_force
+---
+- launchApp
+
+#- runScript : "screens/logoutscreen.js"
+#- runScript : "credentials/input.js"
+
+#- assertVisible: "Forgot password ?"
+#- tapOn: ${output.ForgotField}
+#- tapOn: "Ok"
+#- tapOn: 
+- tapOn: Profile
+- tapOn: Logout
+
+

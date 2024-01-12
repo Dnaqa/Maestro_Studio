@@ -1,0 +1,51 @@
+appId: id.co.grip_force
+---
+- launchApp
+
+- runScript: "screen/transfer-request-screen.js"
+- runFlow:
+    #when:
+     # notVisible:
+      #  text: ${output.TransferField}
+    file: "subsflow/login/logout.yaml"
+
+ #login sebagai wh buat picklist   
+- tapOn: "E-mail"
+- inputText: "user.outlet03@legit-group.id"
+- tapOn: "Password"
+- inputText: "Legit123"
+- tapOn: "Login"
+
+- tapOn: "See All"
+- tapOn: "Transfer Picklist"
+# - tapOn:
+#     text: "Edit"
+#     index: 0
+# - tapOn: "Authorize"
+# - tapOn: "Add Item"
+# - "scroll"
+# - tapOn:
+#     text: "Edit"
+#     index: 0
+# - swipe:
+#     start: "50%, 95%"
+#     end: "10%, 50%"
+
+# - tapOn: "Input kode"
+# - inputText: "BKT2310100019"
+# - tapOn: "Selanjutnya"
+# - tapOn: Pick Quantity
+# - inputText: 2
+# - tapOn: "Pickup"
+
+# # - tapOn:
+# #     text: "Add"
+# #     index: 1
+# # - swipe:
+# #     start: "50%, 95%"
+# #     end: "10%, 50%"
+
+# # - tapOn: "Input kode"
+# # - inputText: "BKT2310100020"
+# # - tapOn: "Selanjutnya"
+- back

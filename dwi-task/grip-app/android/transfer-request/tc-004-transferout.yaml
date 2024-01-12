@@ -1,0 +1,40 @@
+appId: id.co.grip_force.staging
+---
+- launchApp
+- tapOn: "See All"
+- tapOn: "Transfer Out"
+ 
+#transferout
+# - tapOn: "Process"
+# - tapOn: "Total Package"
+# - inputText: 1
+# - tapOn: "Save And  Shipped"
+- tapOn: "Edit"
+- tapOn: "Add Item"
+- tapOn: "Edit"
+- tapOn:
+    text: "Pick Qty"
+    index: 2
+- inputText: "2"
+
+- tapOn: "Save"
+- tapOn: "Submit"
+- tapOn: "Yes"
+- "scroll"
+# - runFlow:
+#     #when:
+#      # notVisible:
+#       #  text: ${output.TransferField}
+#     file: "subsflow/login/logout.yaml"
+- tapOn:
+    text: "Add Item"
+    index: 1
+- tapOn: "Edit"
+- tapOn:
+    text: "Pick Qty"
+    index: 2
+- inputText: "2"
+
+- tapOn: "Save"
+- tapOn: "Submit"
+- tapOn: "Yes"

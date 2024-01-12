@@ -1,0 +1,24 @@
+appId: id.co.grip_force.staging
+---
+- launchApp
+- tapOn: "Transfer Request"
+- tapOn: "Add New"
+- tapOn: "Destination"
+- tapOn: "Central Kitchen Depok Baru"
+- tapOn: "Delivery Date"
+- tapOn: "Confirm"
+- tapOn: "Origin Location"
+- inputText: "Outlet"
+- tapOn: "Outlet 3"
+- tapOn: "Add New Item"
+- tapOn: "Item Name"
+- tapOn: "Galangal/lengkuas Fresh"
+- tapOn: "Request QTY"
+- inputText: "3"
+- tapOn: "Request UOM"
+- "hideKeyboard"
+- tapOn: Request UOM
+- tapOn:
+  text: Kilogram
+  index: 0
+- tapOn: "Submit"
